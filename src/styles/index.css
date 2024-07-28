@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 17px;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* about me */
+
+.about-me-section{
+    background-color: #0891b2;
+    display: flex;
+    align-items: center;
+    padding: 40px 50px 40px 50px;
+}
+
+.portrait{
+    width: 30%;
+    height: auto;
+}
+
+.about-me-box{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-me-links{
+    align-self: flex-end;
+    display: flex;
+    gap: 15px;
+    margin: 5px 5px 0 0;
+}
+
+.icons{
+    width: 27px;
+}
+
+/* my work */
+
+.my-work-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 50px;
+}
+
+.project-icons{
+    width: 21px;
+}
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 1px rgb(199, 198, 198);
+}
+
+.project-text-header{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project-name{
+    margin-right: auto;
+}
+
+.project-screenshot-section{
+    aspect-ratio: 1 / 1;
+    font-size: 35px;
+    background-color: #d88f39;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-text-section{
+    padding: 10px 10px 10px 10px;
+}
+
+/* contact */
+
+.contact-section{
+    background-color: #0891b2;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.contact-h1{
+    font-size: 40px;
+}
+
+.contact-image{
+    width: 50%;
+}
+
+.contact-left{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-phemail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.please-contact{
+    margin: 5px 0 20px 0;
+}
+
+.email{
+    margin-bottom: 25px;
+}
+
+.white-icons{
+    width: 20px;
+}
+
+.contact-icons-container{
+    display: flex;
+    gap: 20px;
+}
+
+.contact-icons{
+    width: 35px;
+}
+
+@media (min-width: 1600px){
+    body{
+        padding: 0 10% 0 10%;
+    }
+}
+
+@media (max-width: 1000px){
+    .about-me-section{
+        flex-direction: column;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .about-me-box{
+        padding: 15px;
+        gap: 7px;
+    }
+    
+    .portrait{
+        width: 40%;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .about-me-links{
+        align-self: flex-end;
+        display: flex;
+        gap: 15px;
+        margin: 0 5px 0 0;
+    }
+    
+    .icons{
+        width: 22px;
+    }
+
+    .my-work-section{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .project-screenshot-section{
+        font-size: 30px;
+        padding: 30px;
+    }
+
+    .contact-section{
+        gap: 25px;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .contact-h1{
+        font-size: 30px;
+    }
+
+    .contact-left{
+        gap: 5px;
+        font-size: 16px;
+    }
+
+    .white-icons{
+        width: 16px;
+    }
+
+    .contact-icons{
+        width: 28px;
+    }
+
+    .contact-image{
+        width: 40%;
+    }
+}
+
+@media(max-width: 500px){
+    .about-me-section{
+        flex-direction: column;
+        padding: 15px 15px 15px 15px;
+    }
+
+    .portrait{
+        width: 100%;
+    }
+
+    .my-work-section{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding: 15px 15px 15px 15px;
+    }
+
+    .contact-section{
+        gap: 25px;
+        padding: 15px 15px 15px 15px;
+        flex-direction: column;
+    }
+
+    .contact-image{
+        width: 100%;
+    }
+}
